@@ -215,6 +215,15 @@ a {
   .grid {
     grid-template-columns: 1fr;
   }
+  .container {
+    padding: 0 20px;
+  }
+  .clipboard {
+    padding-bottom: 43rem;
+  }
+  .clipboard h1 {
+    padding: 30px 2px;
+  }
   .clipboard .bg-img {
     background-image: url("./images/bg-header-mobile.png");
   }
