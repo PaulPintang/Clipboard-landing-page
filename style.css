@@ -79,7 +79,7 @@ a {
 .clipboard {
   display: flex;
   align-items: center;
-  height: 95vh;
+  height: 100vh;
 }
 .container .logo img {
   padding-bottom: 20px;
@@ -132,6 +132,9 @@ a {
 .snippets .text-control p {
   font-size: 18px;
 }
+.access-clipboard {
+  padding-top: 70px;
+}
 .access-clipboard h2 {
   font-size: 30px;
   padding-top: 180px;
@@ -147,7 +150,7 @@ a {
   padding: 50px 0;
 }
 .workflow h2 {
-  font-size: 30px;
+  font-size: 25px;
   padding-bottom: 10px;
 }
 .workflow p {
@@ -310,6 +313,9 @@ a {
   }
   .clipboard-os {
     margin: 100px 0;
+  }
+  .clipboard-os p {
+    padding: 20px 0;
   }
   .company {
     padding: 50px 0;
