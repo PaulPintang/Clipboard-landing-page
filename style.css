@@ -224,8 +224,9 @@ a {
   .clipboard h1 {
     padding: 30px 2px;
   }
-  .clipboard .bg-img {
+  .bg-img {
     background-image: url("./images/bg-header-mobile.png");
+    background-position: center;
   }
   .clipboard .logo img {
     width: 100px;
