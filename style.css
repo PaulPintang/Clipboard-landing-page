@@ -18,8 +18,15 @@ p {
 i {
   color: #514c4c;
 }
+ul li a i:hover {
+  color: hsl(171, 66%, 44%);
+}
+ul li a:hover {
+  color: hsl(171, 66%, 44%);
+}
+
 .container {
-  max-width: 1000px;
+  max-width: 1100px;
   padding: 0 60px;
   margin: auto;
 }
@@ -36,11 +43,12 @@ i {
 }
 .btn:hover {
   cursor: pointer;
+  opacity: 0.8;
 }
 .btn-green {
   background-color: hsl(171, 66%, 44%);
   box-shadow: 0px 3px 5px #888888;
-  padding: 20px 45px;
+  padding: 15px 50px;
   color: white;
   border: none;
   border-radius: 50px;
@@ -48,7 +56,7 @@ i {
 .btn-blue {
   background-color: hsl(233, 100%, 69%);
   box-shadow: 0px 3px 5px #888888;
-  padding: 20px 45px;
+  padding: 15px 50px;
   color: white;
   border: none;
   border-radius: 50px;
@@ -77,11 +85,11 @@ a {
   padding-bottom: 20px;
 }
 .clipboard h1 {
-  font-size: 50px;
-  padding: 30px;
+  font-size: 45px;
+  padding: 10px;
 }
 .clipboard p {
-  font-size: 25px;
+  font-size: 20px;
   max-width: 800px;
   margin: auto;
   padding-bottom: 50px;
@@ -103,19 +111,16 @@ a {
   padding-bottom: 30px;
 }
 .snippets .snippets-text p {
-  font-size: 20px;
+  font-size: 18px;
   max-width: 700px;
   margin: auto;
   text-align: center;
 }
 .snippets .computer img {
   position: absolute;
-  left: -13.7rem;
+  left: -17.7rem;
   top: 0;
   bottom: 0;
-}
-.snippets .grid > *:nth-child(2) {
-  padding: 50px 0;
 }
 .snippets .text-control {
   padding: 30px 0;
@@ -125,23 +130,28 @@ a {
   padding-bottom: 10px;
 }
 .snippets .text-control p {
-  font-size: 19px;
+  font-size: 18px;
 }
-
 .access-clipboard h2 {
   font-size: 30px;
   padding-top: 180px;
-  padding-bottom: 30px;
+  padding-bottom: 15px;
 }
 .access-clipboard p {
-  font-size: 20px;
+  font-size: 18px;
   max-width: 700px;
   margin: auto;
   padding-bottom: 60px;
 }
+.workflow {
+  padding: 50px 0;
+}
 .workflow h2 {
   font-size: 30px;
   padding-bottom: 10px;
+}
+.workflow p {
+  font-size: 18px;
 }
 .workflow .flex {
   height: 200px;
@@ -152,10 +162,14 @@ a {
   height: 100%;
 }
 .workflow-control h3 {
+  font-size: 20px;
   padding: 10px;
 }
+.company {
+  padding-bottom: 50px;
+}
 .clipboard-os {
-  margin: 100px 0;
+  padding: 140px 0;
 }
 .clipboard-os .flex {
   justify-content: center;
@@ -168,10 +182,13 @@ a {
   font-size: 20px;
   max-width: 800px;
   margin: auto;
-  padding: 25px;
+  padding: 25px 0;
 }
 .company {
-  margin: 50px 0;
+  padding: 50px 0;
+}
+.company .flex {
+  flex-wrap: wrap;
 }
 .footer {
   background-color: #f4f4f4;
@@ -207,8 +224,7 @@ a {
 .footer .social li {
   margin: 0;
 }
-
-@media (max-width: 365px) {
+@media (max-width: 768px) {
   body {
     text-align: center;
   }
@@ -216,7 +232,7 @@ a {
     grid-template-columns: 1fr;
   }
   .container {
-    padding: 0 20px;
+    padding: 0 25px;
   }
   .clipboard {
     padding-bottom: 43rem;
@@ -301,6 +317,9 @@ a {
   .company .flex {
     gap: 70px;
   }
+  .clipboard-os {
+    padding: 0;
+  }
   .clipboard-os h2 {
     font-size: 24px;
     width: 70%;
@@ -321,8 +340,142 @@ a {
   }
   .footer .nav-links ul {
     flex-direction: column;
-    justify-content: center;
     gap: 0;
+  }
+  .footer .nav-links ul > *:nth-child(3) {
+    align-self: unset;
+  }
+  .footer .social {
+    padding: 10px 0;
+  }
+  .footer .social ul {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (max-width: 365px) {
+  body {
+    text-align: center;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  .container {
+    padding: 0 25px;
+  }
+  .clipboard {
+    padding-bottom: 43rem;
+  }
+  .clipboard h1 {
+    padding: 30px 2px;
+  }
+  .bg-img {
+    background-image: url("./images/bg-header-mobile.png");
+    background-position: center;
+  }
+  .clipboard .logo img {
+    width: 100px;
+    padding-top: 80px;
+  }
+  .clipboard h1 {
+    font-size: 30px;
+  }
+  .clipboard p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  .btn {
+    width: 100%;
+  }
+  .container .flex {
+    flex-direction: column;
+  }
+  .snippets .grid {
+    position: unset;
+    grid-template-columns: 1fr;
+  }
+  .snippets .computer img {
+    position: unset;
+    width: 300px;
+  }
+  .snippets .snippets-text h2 {
+    font-size: 27px;
+    width: 80%;
+    margin: auto;
+  }
+  .snippets .snippets-text p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  .snippets .text-control p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  .access-clipboard img {
+    padding-bottom: 60px;
+    width: 100%;
+  }
+  .access-clipboard p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  .access-clipboard h2 {
+    font-size: 25px;
+    width: 80%;
+    margin: auto;
+  }
+  .access-clipboard h2 {
+    padding-top: 10px;
+  }
+  .workflow {
+    padding-bottom: 300px;
+  }
+  .workflow h2 {
+    width: 80%;
+    margin: auto;
+  }
+  .workflow-control {
+    padding-bottom: 60px;
+  }
+  .clipboard-os {
+    margin: 100px 0;
+  }
+  .company {
+    padding: 50px 0;
+  }
+  .company .flex {
+    gap: 70px;
+  }
+  .clipboard-os {
+    padding: 0;
+  }
+  .clipboard-os h2 {
+    font-size: 24px;
+    width: 70%;
+    margin: auto;
+  }
+  .clipboard-os p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  .footer .flex {
+    height: 100%;
+  }
+  .footer {
+    padding: 50px 0;
+  }
+  .footer li {
+    padding: 10px;
+  }
+  .footer .nav-links ul {
+    flex-direction: column;
+    gap: 0;
+  }
+  .footer .nav-links ul > *:nth-child(3) {
+    align-self: unset;
+  }
+  .footer .social {
+    padding: 10px 0;
   }
   .footer .social ul {
     display: flex;
